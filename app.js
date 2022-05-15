@@ -1,8 +1,10 @@
 
-const newPass = document.getElementById("new-passenger");
-const passRec = document.getElementById("passenger-record");
-count = 0;
+let count = 0;
+let newPass = document.getElementById("new-passenger");
+let passRec = document.getElementById("passenger-record");
 
-function addPass() {
-    console.log("i was clicked")
+
+function myPass() {
+    count += 1;
+    newPass.textContent = count; 
 }
