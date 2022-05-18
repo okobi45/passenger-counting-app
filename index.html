@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css" />
-  <title>Passenger Counting App</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Passenger Counter App</title>
 </head>
 <body>
-  
+    
+    <header>
+        <h1>Passenger Counter App</h1>
+    </header>
 
-  <script src="app.js"></script>
+    <section>
+        <div class="header-display">
+            <h2 id="current" class="header-display-child">0</h2>
+        </div>
+    
+        <div class="btn">
+            <button onclick="handleCount()" class="left-btn">Current Count</button>
+            <button onclick="handleSave()" class="right-btn">Previous Count</button>
+        </div>
+    
+        <div class="prev-display"> 
+            <h2 id="previous" class="prev-display-child"></h2>
+        </div>
+    
+    </section>
+    
+    <footer></footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
